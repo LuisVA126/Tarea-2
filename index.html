@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GAME ZONE</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #031d02; 
+        color: white; 
+      }
+      header img {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      h1 {
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        text-shadow: 
+          -1px -1px 0 green, 
+          1px -1px 0 green,  
+          -1px 1px 0 green,  
+          1px 1px 0 green;   
+        margin-top: 20px;
+      }
+      .eslogan {
+        text-align: center;
+        font-size: 1.2em;
+        color: green;
+        margin-top: 10px;
+        font-style: italic;
+      }
+      .categorias {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .categorias button {
+        background-color: #013220; 
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .categorias button:hover {
+        background-color: green; 
+      }
+      .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .producto {
+        background-color: #013220; 
+        border: 1px solid green;
+        border-radius: 10px;
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+      }
+      .producto img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .producto h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      .producto p {
+        font-size: 0.9em;
+        color: #ccc;
+      }
+      .producto .precio {
+        font-size: 1.2em;
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo de GAME ZONE" />
+      <h1>GAME ZONE</h1>
+      <p class="eslogan">"Juegos, consolas y accesorios al mejor nivel. ¡Tu mundo gamer en un solo lugar! "</p>
+    </header>
+    <nav class="categorias">
+      <button data-categoria="todos">Todos</button>
+      <button data-categoria="consolas">Consolas</button>
+      <button data-categoria="juegos">Juegos</button>
+      <button data-categoria="accesorios">Accesorios</button>
+    </nav>
+    <section class="productos">
+
+      <div class="producto" data-categoria="consolas">
+        <img src="PS5.jpg" alt="PlayStation 5">
+        <h3>PlayStation 5 Pro 1TB Consola  (Digital)</h3>
+        <p>La última consola de Sony con gráficos mejorados.</p>
+        <p class="precio">s/.3800.00</p>
+      </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="fc25 ps5.jpg" alt="EA Sports FC 25">
+        <h3>EA Sports FC 25 (PS5)</h3>
+        <p>¡Juega con tu equipo favorito y gana!.</p>
+        <p class="precio">s/.320.00</p>
+      </div>
+
+      <div class="producto" data-categoria="accesorios">
+        <img src="audifonorazer.jpg" alt="AUDIFONO GAMING RAZER BLACKSHARK V2 X 7.1 BLACK">
+        <h3>AUDIFONO GAMING RAZER BLACKSHARK V2 X 7.1 BLACK</h3>
+        <p>Sonido envolvente para una experiencia inmersiva.</p>
+        <p class="precio">s/.139.00</p>
+      </div>
+
+      <div class="producto" data-categoria="consolas">
+        <img src="xboxseriesx.jpg" alt="Xbox Series X">
+        <h3>Xbox Series X 1TB</h3>
+        <p>Potencia y rendimiento para los mejores juegos.</p>
+        <p class="precio">s/.3100.00</p>
+      </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="dbsz.jpg" alt="Dragon Ball Sparking Zero (PS5)">
+        <h3>Dragon Ball Sparking Zero (PS5)</h3>
+        <p>¡Domina el poder destructivo de los luchadores más fuertes que han aparecido en DRAGON BALL!</p>
+        <p class="precio">s/.250.00</p>
+      </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="gowr.jpg" alt="God of War Ragnarok Playstation 5">
+        <h3>God of War Ragnarok Playstation 5</h3>
+        <p>Embárcate en un viaje épico e íntimo en el que Kratos y Atreus luchan por saber a qué aferrarse y qué dejar ir.</p>
+        <p class="precio">s/.200.00</p>
+      </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="rev.jpg" alt="Resident Evil Village Xbox">
+        <h3>Resident Evil Village Xbox</h3>
+        <p>Lucha por sobrevivir mientras el peligro acecha en cada esquina.</p>
+        <p class="precio">s/.140.00</p>
+      </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="mariood.jpg" alt="Nintendo Switch Super Mario Odyssey">
+        <h3>Nintendo Switch Super Mario Odyssey</h3>
+        <p>¡Viaja por el mundo!¡En su nueva aventura, Mario tiene un mundo entero por explorar!</p>
+        <p class="precio">s/.170.00</p>
+      </div>
+
+       <div class="producto" data-categoria="consolas">
+        <img src="nintendo.jpg" alt="CONSOLA NINTENDO SWITCH OLED NEON">
+        <h3>CONSOLA NINTENDO SWITCH OLED NEON</h3>
+        <p> LA ÚLTIMA CONSOLA QUE SE UNE A LA FAMILIA NINTENDO SWITCH.</p>
+        <p class="precio">s/.1390.00</p>
+      </div>
+
+      <div class="producto" data-categoria="accesorios">
+        <img src="dualsense.jpg" alt="MANDO ESTANDAR SONY PS5 DUALSENSE">
+        <h3>MANDO ESTANDAR SONY PS5 DUALSENSE</h3>
+        <p>Descubre una experiencia de juego más profunda con el innovador mando de PS5.</p>
+        <p class="precio">s/.320.00</p>
+      </div>
+
+        <div class="producto" data-categoria="accesorios">
+          <img src="joystickxbox.jpg" alt="Mando de Xbox One Series X + Cable USB">
+          <h3>Mando de Xbox One Series X + Cable USB</h3>
+          <p>Mantén el objetivo con un mando de dirección híbrido y agarre texturizado en los gatillos y botones.</p>
+          <p class="precio">s/.250.00</p>
+        </div>
+
+      <div class="producto" data-categoria="juegos">
+        <img src="spiderman2.jpg" alt="Juego Marvel Spider Man 2 PS5">
+        <h3>Juego Marvel Spider Man 2 PS5</h3>
+        <p>Balancéate, salta y utiliza las nuevas alas de telaraña para recorrer toda la ciudad de Nueva York de Marvel.</p>
+        <p class="precio">s/.230.00</p>
+      </div>
+
+         <div class="producto" data-categoria="juegos">
+          <img src="gtav.jpg" alt="Grand Theft Auto V Premium PS5">
+          <h3>Grand Theft Auto V Premium PS5</h3>
+          <p>Disfruta del mundo de Grand Theft Auto V de un modo totalmente nuevo.</p>
+          <p class="precio">s/.120.00</p>
+        </div>
+        
+                 <div class="producto" data-categoria="juegos">
+                  <img src="mk1.jpg" alt="Mortal Kombat 1 PS5">
+                  <h3>Mortal Kombat 1 PS5</h3>
+                  <p>¡Mortal Kombat 1 abre paso a una nueva era de esta icónica saga con un nuevo sistema de kombate, modos de juego y fatalities!</p>
+                  <p class="precio">s/.180.00</p>
+                </div>
+
+                 <div class="producto" data-categoria="juegos">
+                  <img src="zelda3.png" alt="The Legend of Zelda Breath of the Wild Nintendo Switch">
+                  <h3>The Legend of Zelda Breath of the Wild Nintendo Switch</h3>
+                  <p>Entra a un mundo repleto de descubrimiento, exploración y aventura en The Legend of Zelda: Breath of the Wild.</p>
+                  <p class="precio">s/.190.00</p>
+                </div>
+
+    <div class="producto" data-categoria="accesorios">
+      <img src="g213.png" alt="Teclado Logitech G213">
+      <h3>Teclado Logitech G213</h3>
+      <p>Cada tecla de G213 está optimizada para mejorar la experiencia táctil y ofrecer una respuesta superrápida.</p>
+      <p class="precio">s/.240.00</p>
+    </div>
+
+    <div class="producto" data-categoria="accesorios">
+      <img src="g502.png" alt="Mouse Gamer Logitech G502">
+      <h3>Mouse Gamer Logitech G502</h3>
+      <p>alidad profesional, apto para torneos Ahora con tiempos de respuesta un 68% superiores.</p>
+      <p class="precio">s/.240.00</p>
+    </div>  
+    </section>
+
+    <footer>
+      <address></address>
+      <small></small>
+      <footer>
+        <p>Contáctanos:</p>
+        <p>Correo: <a href="mailto:tucorreo@example.com">zonegame@gmail.com</a></p>
+        <small>&copy; 2023 GAME ZONE. Todos los derechos reservados.</small>
+      </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const botonesCategorias = document.querySelectorAll(".categorias button");
+        const productos = document.querySelectorAll(".producto");
+
+        botonesCategorias.forEach((boton) => {
+          boton.addEventListener("click", () => {
+            const categoria = boton.getAttribute("data-categoria");
+
+            productos.forEach((producto) => {
+              if (categoria === "todos" || producto.getAttribute("data-categoria") === categoria) {
+                producto.style.display = "block";
+              } else {
+                producto.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
